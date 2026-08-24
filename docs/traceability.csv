@@ -1,0 +1,11 @@
+requirement_id,design_element,verification_id,status,notes
+RDG-FR-001,TCP simulation listener,IT-001,implemented,Loopback TCP simulation interface only
+RDG-FR-002,Frame parser,IT-002 / UT-001,implemented,Malformed frame rejection and unit-level field checks
+RDG-FR-003,Frame parser,IT-003 / UT-001,implemented,Finite numeric/range validation
+RDG-FR-004,Sequence guard,IT-004 / UT-003,implemented,In-memory sequence guard with LRU capacity protection
+RDG-FR-005,Diagnostic evaluator,IT-005 / UT-002,implemented,Illustrative thresholds with non-suppressed multi-event capture
+RDG-FR-006,Audit logger,IT-006,implemented,Timestamped CSV append log with monotonic clock
+RDG-FR-007,Client worker threads,IT-007,implemented,Thread worker pool with automatic thread reclamation
+RDG-FR-008,Signal handling and shutdown,IT-008,implemented,Automated SIGTERM/SIGINT shutdown via non-blocking poll loop
+RDG-TRDP-001,TRDP adapter,TRDP-INT-001,not_implemented,Actual TCNOpen TRDP integration not present
+RDG-PLC-001,Structured Text diagnostic logic,PLC-VER-001,example_only,Toolchain compilation and runtime integration not yet verified
