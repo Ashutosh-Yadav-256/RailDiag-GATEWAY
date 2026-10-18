@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "raildiag-gateway"
+version = "0.1.0"
+description = "Python sensor simulator for a Linux onboard diagnostics gateway demonstrator"
+requires-python = ">=3.10"
+
+[project.scripts]
+raildiag-sim = "rail_diag.sensor_sim:main"
+
+[tool.setuptools]
+package-dir = {"" = "python"}
+
+[tool.setuptools.packages.find]
+where = ["python"]
